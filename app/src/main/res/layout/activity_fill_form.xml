@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aff02.expansemanager.Activity.FillForm">
+
+    <TextView
+        android:id="@+id/txtExpanse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Expense"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:layout_alignParentStart="true" />
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_layout_name"
+            android:layout_marginTop="50dp">
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/txtExpanse"
+            android:layout_alignParentStart="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_marginTop="120dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/temp"
+        android:hint="Payment Mode"
+        android:layout_marginTop="160dp"/>
+   <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="Select Date"
+        android:textSize="20dp"
+        android:clickable="true"
+        android:textStyle="bold"
+        android:id="@+id/datepicker"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtsetdate"
+        android:hint="Selected Date"
+        android:layout_marginLeft="150dp"
+        android:layout_alignTop="@+id/datepicker"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtipRupees"
+        android:layout_marginTop="245dp">
+        
+        <!--<android.support.v7.widget.AppCompatEditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:inputType="number"-->
+            <!--android:id="@+id/rupees"-->
+            <!--android:drawableLeft="@drawable/ic_rupee_indian"/>-->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtRupees"
+            android:drawableLeft="@drawable/ic_rupee_indian"
+            android:inputType="number"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textipdesc"
+        android:layout_marginTop="310dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:hint="Description"
+            android:id="@+id/edtDesc"
+            android:inputType="text"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnsave"
+        android:text="Save"
+        android:theme="@style/Button1Style"
+        android:layout_above="@+id/btnshowlist"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:id="@+id/btnshowlist"
+        android:theme="@style/Button3Style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:text="View"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/txtsetdate"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:ems="10"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:hint="Display Date"-->
+        <!--android:layout_alignBaseline="@+id/datepicker"-->
+        <!--android:layout_alignBottom="@+id/datepicker"-->
+        <!--android:layout_toEndOf="@+id/btnsave"-->
+        <!--android:layout_marginStart="16dp" />-->
+</RelativeLayout>

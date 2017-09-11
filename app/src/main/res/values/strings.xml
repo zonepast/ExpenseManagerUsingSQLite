@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ExpanseManager</string>
+
+    <string-array name="payment_modes">
+        <item>Credit Card</item>
+        <item>Debit Card</item>
+        <item>E-Wallets</item>
+        <item>Mobile Payments</item>
+    </string-array>
+</resources>
